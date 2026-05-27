@@ -1,15 +1,3 @@
-# ❄️ Utopia: NixOS + Hyprland Configuration
-
-A modular, flake-based NixOS configuration focused on:
-
-* reproducibility
-* minimalism
-* Wayland-first workflow
-* Hyprland customization
-* portable dotfiles
-
----
-
 ##  Setup
 
 Clone the repository into your home directory:
@@ -17,7 +5,7 @@ Clone the repository into your home directory:
 ```bash
 git clone https://github.com/rn-rf/.nixos-config.git ~/.nixos-config
 ```
-
+Change Username From rn to your nixos Username
 Apply the configuration:
 
 ```bash
@@ -78,106 +66,6 @@ It uses:
 
 ---
 
-##  System Features
-
-###  Core
-
-* Flake-based NixOS configuration
-* Modular system layout
-* GRUB dual-boot support
-* PipeWire audio
-* NetworkManager
-
-###  Desktop
-
-* Hyprland (Wayland compositor)
-* GNOME fallback session
-* Flatpak support
-
-###  UI & Workflow
-
-* Waybar with modular scripts
-* Dynamic transparency system
-* Pywal theming support
-* Ghostty terminal
-* Custom GTK + icon themes
-
-###  Development Environment
-
-* Node.js & TypeScript tooling
-* Java LSP (jdtls)
-* GCC & JDK
-* Git + tmux workflow
-
----
-
-##  Home Manager
-
-Home Manager manages:
-
-* Hyprland configuration
-* Waybar configuration
-* Ghostty terminal
-* tmux configuration
-* shell environment
-* user scripts
-
-Config files are stored in:
-
-```
-dotfiles/
-```
-
-and symlinked into:
-
-```
-~/.config
-```
-
-This ensures reproducibility and version control.
-
----
-
-##  Hyprland
-
-Hyprland configuration is stored in:
-
-```
-dotfiles/hypr/
-```
-
-Changes can be applied instantly:
-
-```
-hyprctl reload
-```
-
-Runtime changes should use `hyprctl` instead of modifying config files.
-
----
-
-##  TODO
-
-### Waybar & UI
-
-* [ ] Integrate `Toggal` with cache state (change transperancy of waybar dynamically) 
-* [ ] Add multi-monitor awareness
-
-
-### System Improvements
-
-* [ ] Neovim setup (nixvim/nixcats)
-* [ ] add secrets management (agenix/sops)
-* [ ] power management tuning
-* [ ] gaming support profile
-* [ ] laptop battery optimization
-
-### Dev Environment
-
-* [ ] devshell configuration
-* [ ] language-specific profiles
-
----
 
 ##  License
 
